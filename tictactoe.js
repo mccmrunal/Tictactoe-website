@@ -11,25 +11,14 @@ var eight = document.querySelector("#eight")
 var nine = document.querySelector("#nine")  
 
 function add(){
-console.log(counter+1);
-
   if (counter == 0){
     this.textContent = "X";
-
     counter = 1;
-    console.log(counter+"df");
-
 }
   else {
-
     counter = 0;
     this.textContent = "O";
-
-    console.log(counter+3);
-
       }
-      console.log(counter+"dfas");
-
 }
 one.addEventListener('click',add)
 two.addEventListener('click',add)
