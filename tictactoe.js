@@ -1,3 +1,5 @@
+var  counter = 0;
+
 var one = document.querySelector("#one")
 var two = document.querySelector("#two")
 var three = document.querySelector("#three")
@@ -6,30 +8,35 @@ var five = document.querySelector("#five")
 var six = document.querySelector("#six")
 var seven = document.querySelector("#seven")
 var eight = document.querySelector("#eight")
-var nine = document.querySelector("#nine")
+var nine = document.querySelector("#nine")  
 
-function addx(){
-  this.textContent = "X";
-  this.style.fontSize = large;
+function add(){
+console.log(counter+1);
+
+  if (counter == 0){
+    this.textContent = "X";
+
+    counter = 1;
+    console.log(counter+"df");
+
 }
-function addo(){
-  this.textContent = "O";
+  else {
+
+    counter = 0;
+    this.textContent = "O";
+
+    console.log(counter+3);
+
+      }
+      console.log(counter+"dfas");
+
 }
-one.addEventListener('click',addx)
-one.addEventListener('dblclick',addo)
-two.addEventListener('click',addx)
-two.addEventListener('dblclick',addo)
-three.addEventListener('click',addx)
-three.addEventListener('dblclick',addo)
-four.addEventListener('click',addx)
-four.addEventListener('dblclick',addo)
-five.addEventListener('click',addx)
-five.addEventListener('dblclick',addo)
-six.addEventListener('click',addx)
-six.addEventListener('dblclick',addo)
-seven.addEventListener('click',addx)
-seven.addEventListener('dblclick',addo)
-eight.addEventListener('click',addx)
-eight.addEventListener('dblclick',addo)
-nine.addEventListener('click',addx)
-nine.addEventListener('dblclick',addo)
+one.addEventListener('click',add)
+two.addEventListener('click',add)
+three.addEventListener('click',add)
+four.addEventListener('click',add)
+five.addEventListener('click',add)
+six.addEventListener('click',add)
+seven.addEventListener('click',add)
+eight.addEventListener('click',add)
+nine.addEventListener('click',add)
